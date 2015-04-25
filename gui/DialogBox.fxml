@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="176.0" prefWidth="459.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.Controller">
+   <children>
+      <ImageView fitHeight="85.0" fitWidth="86.0" layoutX="13.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/info.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="130.0" layoutY="13.0" prefHeight="97.0" prefWidth="355.0" text="Time Traveler is writen in Java and&#10;allows you to manipulate &#10;BTRFS snapshots by using unix&#10;commands such as rsync, btrfs, and others.&#10;Special thanks to:&#10;Bubba Lichvar" />
+      <Label layoutX="126.0" layoutY="125.0" prefHeight="115.0" prefWidth="383.0" text="this program is distributed under the terms of the &#10;MIT License, a copy of the license can be found&#10;in the installation directory,&#10;and in the License submenu.&#10;Copyright (c) 2015 Stoian Dan." />
+   </children>
+</AnchorPane>

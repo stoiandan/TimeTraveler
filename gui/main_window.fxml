@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="343.0" prefWidth="493.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.Controller">
+   <children>
+      <MenuBar fx:id="men_bar" layoutY="3.0" prefHeight="27.0" prefWidth="515.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="3.0">
+        <menus>
+            <Menu mnemonicParsing="false" text="Clean">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#del_specific" text="Delete Specific snapshot" />
+                  <MenuItem mnemonicParsing="false" onAction="#delete_a_r" text="Delete all root snapshots" />
+                  <MenuItem mnemonicParsing="false" onAction="#delete_a_h" text="Delete all home snapshots" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Advance">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#navigate" text="Navigate in Snapshots" />
+                  <MenuItem fx:id="p1" mnemonicParsing="false" onAction="#safe_r" text="File safe restore" />
+                  <MenuItem fx:id="p2" mnemonicParsing="false" onAction="#safe_r_f" text="Folder safe restore" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#licese_show" text="License" />
+              <MenuItem fx:id="about" mnemonicParsing="false" onAction="#help_about" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button layoutX="20.0" layoutY="211.0" mnemonicParsing="false" onAction="#snapsoht_now" prefHeight="85.0" prefWidth="130.0" text="Snapshot my &#10;system now&#10;" />
+      <Button fx:id="b1" layoutX="173.0" layoutY="211.0" mnemonicParsing="false" onAction="#restore_snapshot" prefHeight="85.0" prefWidth="130.0" text="Restore my &#10;system  now&#10;" />
+      <Separator layoutX="311.0" layoutY="30.0" orientation="VERTICAL" prefHeight="311.0" prefWidth="6.0" />
+      <Label layoutX="188.0" layoutY="187.0" prefHeight="15.0" prefWidth="88.0" text="Restoration" />
+      <Label layoutX="40.0" layoutY="187.0" prefHeight="15.0" prefWidth="88.0" text="Snapshotting" />
+      <Separator layoutX="39.0" layoutY="123.0" prefHeight="3.0" prefWidth="254.0" />
+      <ImageView fitHeight="185.0" fitWidth="209.0" layoutX="313.0" layoutY="39.0">
+         <image>
+            <Image url="@../icons/timetraveler.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="msg" layoutX="322.0" layoutY="230.0" prefHeight="109.0" prefWidth="179.0" text="Current Status: IDLE">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Separator layoutX="158.0" layoutY="125.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="6.0" />
+      <Separator layoutX="-3.0" layoutY="123.0" prefHeight="3.0" prefWidth="315.0" />
+      <Separator layoutX="-4.0" layoutY="57.0" prefHeight="3.0" prefWidth="315.0" />
+      <Label layoutX="10.0" layoutY="38.0" text="Scheduling:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="radio_home" layoutX="14.0" layoutY="71.0" mnemonicParsing="false" onAction="#automatic_home" text="hourly snapshotting for my home folder" />
+      <CheckBox fx:id="radio_root" layoutX="13.0" layoutY="95.0" mnemonicParsing="false" onAction="#automatic_root" text="hourly snapshotting for my root folder" />
+   </children>
+</AnchorPane>

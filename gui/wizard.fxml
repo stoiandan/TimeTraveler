@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="214.0" prefWidth="337.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.Wizard">
+   <children>
+      <RadioButton fx:id="home" layoutX="22.0" layoutY="76.0" mnemonicParsing="false" onAction="#home_select" text="user home  folder" />
+      <RadioButton fx:id="root" layoutX="185.0" layoutY="75.0" mnemonicParsing="false" onAction="#root_select" text="root folder" />
+      <Label layoutX="39.0" layoutY="9.0" prefHeight="28.0" prefWidth="261.0" text="TimeTraveler Wizard">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Separator layoutX="34.0" layoutY="102.0" prefHeight="3.0" prefWidth="254.0" />
+      <Separator layoutX="35.0" layoutY="33.0" prefHeight="3.0" prefWidth="254.0" />
+      <Label fx:id="warning" layoutX="16.0" layoutY="50.0" text="Choose folder:" />
+      <TextField fx:id="name" layoutX="64.0" layoutY="140.0" />
+      <Label fx:id="warn2" layoutX="14.0" layoutY="117.0" text="Snapshot name (or let it default):" />
+      <Button layoutX="78.0" layoutY="175.0" mnemonicParsing="false" onAction="#create_snapshot" text="Create Snapshot" />
+   </children>
+</AnchorPane>

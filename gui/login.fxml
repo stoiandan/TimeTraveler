@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="120.0" prefWidth="387.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.Main">
+   <children>
+      <PasswordField fx:id="user_password" layoutX="113.0" layoutY="49.0" onKeyPressed="#login_do_ENTER" />
+      <Label layoutX="6.0" layoutY="48.0" prefHeight="25.0" prefWidth="103.0" text="user password:" />
+      <Label fx:id="lable" layoutX="10.0" layoutY="6.0" text="TimeTraveler requires advance privileges." />
+      <Button fx:id="bt" layoutX="148.0" layoutY="85.0" mnemonicParsing="false" onAction="#login_do" text="Login" />
+      <ImageView fx:id="img" fitHeight="86.0" fitWidth="111.0" layoutX="285.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/dialog-password.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
